@@ -10,7 +10,7 @@ st.set_page_config(
 )
 
 # API endpoint
-API_URL = "http://localhost:8000"
+API_URL = "https://streamchat-56kf.onrender.com"
 
 # Initialize session state
 if "messages" not in st.session_state:
