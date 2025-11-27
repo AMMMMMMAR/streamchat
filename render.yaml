@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: gemini-chatbot-backend
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn fastapi_backend:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: GEMINI_API_KEY
+        fromDatabase: false
+        sync: false
+    plan: free
