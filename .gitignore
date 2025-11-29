@@ -21,3 +21,6 @@ venv.bak/
 
 # Logs
 *.log
+
+# AWS Configuration
+AWS.md
